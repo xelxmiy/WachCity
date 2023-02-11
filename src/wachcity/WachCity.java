@@ -36,7 +36,8 @@ public class WachCity {
               + "year y and then lists all years between x and y (inclusive)\n"
               + " when all positions change.\n",
                 "WachCity", 
-                JOptionPane.INFORMATION_MESSAGE);     
+                JOptionPane.INFORMATION_MESSAGE);  
+        //get the starting year
         while(CurrentYear < 0) {
             try {
                 CurrentYear = Integer.parseInt(JOptionPane.showInputDialog(
@@ -51,6 +52,7 @@ public class WachCity {
                 JOptionPane.INFORMATION_MESSAGE);           
             }
         }
+        //get our final year
         while(FinalYear < 0) {
             try {
                 FinalYear = Integer.parseInt(JOptionPane.showInputDialog(
